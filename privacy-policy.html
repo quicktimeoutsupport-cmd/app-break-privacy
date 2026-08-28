@@ -14,56 +14,101 @@
 </head>
 <body><main>
   <h1>앱 잠시 멈춤 개인정보처리방침</h1>
-  <p>시행일: 2026년 7월 26일 · 개발자: developerbonney</p>
+  <p>시행일: 2026년 8월 29일 · 개발자: developerbonney</p>
   <div class="card">
-    <p>앱 잠시 멈춤은 계정을 만들지 않으며, 사용자가 선택한 앱의 사용
-    시간과 제한 설정을 기기 안에서 처리합니다.</p>
+    <p>앱 잠시 멈춤은 계정을 만들지 않습니다. Android와 iOS에서
+    사용자가 선택한 항목의 제한은 기기 안에서 처리되며, 사용기록이나
+    Screen Time 선택 정보는 개발자 서버로 전송되지 않습니다.</p>
   </div>
-  <section><h2>처리하는 정보</h2>
-    <p>권한을 허용한 경우 현재 사용 중인 앱과 당일 사용시간 합계를
-    제한과 비교합니다. 원본 사용기록은 복사하거나 서버로 전송하지
-    않습니다. 선택한 앱 이름·패키지명, 제한, 표시 설정과 당일 멈춤
-    상태는 앱의 비공개 저장공간에 저장됩니다.</p>
+  <section><h2>공통 사항</h2>
+    <p>앱은 계정, 이름, 이메일 주소 또는 연락처를 수집하지 않습니다.
+    사용자가 정한 제한 시간, 화면 설정과 동작에 필요한 상태만 앱의
+    비공개 로컬 저장공간에 보관합니다. 분석 SDK나 개발자 운영 서버는
+    사용하지 않습니다.</p>
+  </section>
+  <section><h2>Android</h2>
+    <p>사용정보 접근 권한을 허용하면 현재 사용 중인 앱과 당일 사용시간
+    합계를 사용자가 설정한 제한과 비교합니다. 선택한 앱 이름·패키지명,
+    제한 시간과 당일 멈춤 상태는 앱의 비공개 저장공간에 보관됩니다.
+    Android의 원본 사용기록은 복사하거나 서버로 전송하지 않습니다.</p>
+  </section>
+  <section><h2>iOS</h2>
+    <p>Family Controls 권한을 허용하면 Apple의 Screen Time API가 사용자가
+    선택한 앱·카테고리·웹사이트의 제한 도달 여부를 기기 안에서
+    계산합니다. 선택 토큰, 제한 시간, Device Activity 일정과 차단 상태는
+    공유 앱 그룹에 로컬로 보관됩니다. Apple은 선택 항목의 실제 식별자와
+    정확한 사용시간을 앱에 공개하지 않으며, 앱은 Screen Time 정보를
+    개발자 서버로 전송하지 않습니다.</p>
   </section>
   <section><h2>광고</h2>
-    <p>배너는 Google Mobile Ads가 제공합니다. Google 광고 SDK는 광고
-    제공, 측정과 부정 사용 방지를 위해 IP 주소로 추정한 대략적 위치,
-    앱 상호작용, 진단 정보와 기기 식별자를 처리할 수 있습니다. 앱은
-    필요한 지역에서 동의 상태를 확인한 뒤 광고를 요청하며 사용기록,
-    선택 앱 목록과 제한을 광고 SDK에 전달하지 않습니다.</p>
+    <p>Android와 iOS 홈 화면 하단의 배너는 Google Mobile Ads가
+    제공합니다. Google 광고 SDK는 광고 제공, 측정과 부정 사용 방지를
+    위해 IP 주소로 추정한 대략적 위치, 앱·광고 상호작용, 진단 정보와
+    기기·광고 식별자를 처리할 수 있습니다. 앱은 Android 사용기록,
+    iOS Screen Time 정보, 선택 앱 목록·토큰 또는 제한 시간을 광고
+    SDK에 전달하지 않습니다. 필요한 지역에서는 동의가 완료된 뒤에만
+    광고를 요청하며 앱에서 광고 개인정보 선택을 확인할 수 있습니다.</p>
   </section>
   <section><h2>보관·삭제와 보안</h2>
-    <p>로컬 정보는 앱의 ‘모든 로컬 데이터 삭제’, Android 앱 저장공간
-    삭제 또는 앱 제거 시 삭제됩니다. 백업과 기기 이전은 비활성화되어
-    있습니다. 광고 통신은 암호화 연결을 사용합니다.</p>
+    <p>로컬 정보는 앱의 ‘모든 로컬 데이터 삭제’, 운영체제의 앱 데이터
+    삭제 또는 앱 제거 시 삭제됩니다. iOS에서는 Device Activity 일정,
+    차단 상태와 Family Controls 선택 토큰도 함께 제거됩니다. 앱 데이터는
+    운영체제의 앱 샌드박스와 기기 저장소 암호화로 보호되며 광고 통신은
+    암호화 연결을 사용합니다.</p>
   </section>
   <section><h2>문의</h2>
-    <p>개인정보 문의는 Google Play 등록정보에 표시된 개발자 연락처를
-    이용해 주세요. 방침 변경 시 이 페이지의 시행일을 갱신합니다.</p>
+    <p>개인정보 문의: <a href="mailto:quicktimeout.support@gmail.com">
+    quicktimeout.support@gmail.com</a>. 방침 변경 시 이 페이지의
+    시행일을 갱신합니다.</p>
   </section>
   <hr>
   <h1 lang="en">App Break Privacy Policy</h1>
-  <p lang="en">Effective 26 July 2026 · Developer: developerbonney</p>
-  <section lang="en"><h2>Data processed</h2>
-    <p>With permission, App Break compares the foreground app and its daily
-    usage total with limits you set. Raw usage history is not copied or sent to
-    a server. Selected app names and package names, limits, display settings,
-    and today's pause state are stored in private on-device storage.</p>
+  <p lang="en">Effective 29 August 2026 · Developer: developerbonney</p>
+  <div class="card" lang="en">
+    <p>App Break does not create an account. On Android and iOS, limits for
+    selected items are processed on device. Usage history and Screen Time
+    selections are not sent to a developer-operated server.</p>
+  </div>
+  <section lang="en"><h2>Common practices</h2>
+    <p>The app does not collect account details, names, email addresses, or
+    contacts. It stores only user-defined limits, display settings, and state
+    needed for the app to operate in private local storage. It uses no
+    analytics SDK or developer-operated server.</p>
+  </section>
+  <section lang="en"><h2>Android</h2>
+    <p>With Usage Access permission, the app compares the foreground app and
+    its daily usage total with limits you set. Selected app names and package
+    names, limits, and today's pause state are stored in private app storage.
+    Raw Android usage history is not copied or sent to a server.</p>
+  </section>
+  <section lang="en"><h2>iOS</h2>
+    <p>With Family Controls authorization, Apple's Screen Time APIs calculate
+    limit events on device for apps, categories, and websites you select.
+    Selection tokens, limits, Device Activity schedules, and shield state are
+    stored locally in the shared app group. Apple does not reveal selected
+    items' identifiers or exact usage totals to App Break, and the app does not
+    send Screen Time information to a developer-operated server.</p>
   </section>
   <section lang="en"><h2>Advertising</h2>
-    <p>Google Mobile Ads provides the banner. Its SDK may process approximate
-    location derived from IP address, app interactions, diagnostics, and device
-    identifiers for ad delivery, measurement, and fraud prevention. App Break
-    checks consent where required and does not give the SDK Android usage
-    history, selected-app lists, or limits.</p>
+    <p>Google Mobile Ads provides the bottom banner on Android and iOS home
+    screens. Its SDK may process approximate location derived from IP address,
+    app or ad interactions, diagnostics, and device or advertising identifiers
+    for ad delivery, measurement, and fraud prevention. App Break does not give
+    it Android usage history, iOS Screen Time information, selected-app lists
+    or tokens, or limits. Where required, ads are requested only after consent
+    is complete, and ad privacy choices are available in the app.</p>
   </section>
   <section lang="en"><h2>Retention, deletion, and security</h2>
-    <p>Delete local information with “Delete all local data,” Android storage
-    controls, or uninstall. Backup and device transfer are disabled. Ad network
-    traffic uses encrypted connections.</p>
+    <p>Delete local information with “Delete all local data,” operating-system
+    app-data controls, or uninstall. On iOS this also removes Device Activity
+    schedules, shields, and Family Controls selection tokens. App data is
+    protected by the operating system's app sandbox and device storage
+    encryption. Ad network traffic uses encrypted connections.</p>
   </section>
   <section lang="en"><h2>Contact</h2>
-    <p>Use the developer contact shown on the Google Play listing for privacy
-    inquiries. The effective date above will change when this policy changes.</p>
+    <p>Privacy inquiries:
+    <a href="mailto:quicktimeout.support@gmail.com">
+    quicktimeout.support@gmail.com</a>. The effective date above will change
+    when this policy changes.</p>
   </section>
 </main></body></html>
